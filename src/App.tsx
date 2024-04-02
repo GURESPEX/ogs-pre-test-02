@@ -37,7 +37,11 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center flex-1">
-          <RobotDisplay robotSteps={robotSteps} />
+          {robotSteps ? (
+            <RobotDisplay robotSteps={robotSteps} />
+          ) : (
+            <div>Enter the code to run.</div>
+          )}
         </div>
       </div>
     </div>
