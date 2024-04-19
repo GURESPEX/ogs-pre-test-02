@@ -10,8 +10,6 @@ export default function RobotDisplay({ robotSteps }: Props) {
   const cellSize = 32;
   const currentPosition = robotSteps && robotSteps[robotSteps.length - 1];
 
-  console.log(robotSteps && robotSteps[robotSteps.length - 1]);
-
   return (
     <div className="flex flex-col gap-2">
       <div>
